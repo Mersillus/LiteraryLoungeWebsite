@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+  font-family: 'Montserrat', sans-serif; /* Specify preferred font */
+  background-color: #f7f7f7; /* Light grey background for the page */
+  /* Add padding to the top of the body to prevent content from being hidden behind the fixed navbar */
+  padding-top: 80px; /* Adjust this value based on your navbar's actual height */
+  margin: 0; /* Remove default body margin */
+}
+
+/* Custom styles for the navigation bar */
+.navbar-custom {
+  background-color: #333; /* Dark background for the navbar */
+  padding: 0.8rem 1rem;   /* Padding around the navbar content */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+}
+
+.navbar-custom .container-fluid {
+  justify-content: flex-start; /* Aligns dropdown button to the left */
+}
+
+/* Styling for the dropdown menu button */
+.navbar-custom .btn-secondary.dropdown-toggle {
+    background-color: #007bff; /* Bootstrap primary blue for better visibility */
+    border-color: #007bff;
+    color: #fff; /* White text */
+    font-size: 1rem; /* Standard font size */
+    padding: 0.5rem 1rem; /* Comfortable padding */
+}
+
+.navbar-custom .btn-secondary.dropdown-toggle:hover,
+.navbar-custom .btn-secondary.dropdown-toggle:focus {
+    background-color: #0056b3; /* Darker blue on hover/focus for feedback */
+    border-color: #0056b3;
+    color: #fff;
+}
+
+/* Styling for the dropdown menu itself */
+.dropdown-menu {
+  background-color: #444; /* Dark background for dropdown */
+  border: none; /* Remove default border */
+  border-radius: 0.25rem; /* Slightly rounded corners for modern look */
+  margin-top: 0.5rem; /* Adds a little space between button and menu */
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); /* Softer shadow for depth */
+}
+
+/* Styling for individual items in the dropdown */
+.dropdown-item {
+  color: #fff; /* White text for dropdown items */
+  padding: 0.75rem 1.5rem; /* Generous padding for easy clicking */
+  font-size: 1rem; /* Standard font size */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #555; /* Slightly lighter background on hover/focus */
+  color: #fff; /* Ensure text remains white */
+}
+
+/* Separator line in the dropdown */
+.dropdown-divider {
+  border-top: 1px solid #5f5f5f; /* Custom, slightly lighter color for divider */
+  margin: 0.5rem 0; /* Spacing around divider */
+}
+
+/* Main content container for pages */
+.page-container {
+  max-width: 800px; /* Max width for content readability */
+  margin: 20px auto 40px auto; /* Top margin adjusted for fixed navbar, bottom margin for spacing */
+  padding: 30px; /* Ample padding inside the container */
+  background-color: #fff; /* White background for content area */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2rem; /* Responsive font size */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 1.5rem; /* Space below the heading */
+  color: #333; /* Dark grey for text */
+  text-align: center; /* Center align headings */
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1rem; /* Standard font size for readability */
+  line-height: 1.7; /* Improved line spacing for readability */
+  color: #666; /* Medium grey for paragraph text */
+  margin-bottom: 1rem; /* Space below paragraphs */
+}
+
+/* Centered text utility for specific paragraphs if needed */
+.text-center {
+  text-align: center;
+}
+
+/* Justified text for longer content blocks if desired */
+.text-justify {
+  text-align: justify;
+}
